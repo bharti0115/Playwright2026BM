@@ -24,7 +24,7 @@ class Student
 
 }
 
-const s1=new Student("Amit",27,250,false,"API")
+const s1=new Student("Bharti",27,250,false,"API")
 const s2=new Student("Ajinkya",26,350,true,"All Course")
 
 s1.changeAge(30)

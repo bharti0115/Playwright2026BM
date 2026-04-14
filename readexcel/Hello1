@@ -1,5 +1,25 @@
-public class HelloWorld {
+public class Solution {
+    public static String compareNeighbours(int[] A) {
+        StringBuilder result = new StringBuilder();
+
+        for (int i = 0; i < A.length - 1; i++) {
+            if (A[i] < A[i+1]) {
+                result.append("<");
+            } else if (A[i] > A[i+1]) {
+                result.append(">");
+            } else {
+                result.append("=");
+            }
+        }
+
+        return result.toString();
+    }
+
     public static void main(String[] args) {
-        System.out.println("Hello World from VS Code!");
+        int[] arr1 = {4, 3, 6, 6, 3};
+        int[] arr2 = {3, 2, 1, 1, 2, 3};
+
+        System.out.println(compareNeighbours(arr1)); // Output: "><=>"
+        System.out.println(compareNeighbours(arr2)); // Output: ">>=<<"
     }
 }
