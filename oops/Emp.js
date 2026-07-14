@@ -1,5 +1,5 @@
 // we can assign class name to variable using class expressions
-const Emp=class
+const Emp=class12
 {
     constructor(name)
     {
